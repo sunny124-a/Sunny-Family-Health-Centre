@@ -1,0 +1,123 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunny Family Health Care Centre</title>
+  <meta name="description" content="Sunny Family Health Care Centre offers compassionate medical services for all ages. Book an appointment online or contact us by WhatsApp or phone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f6f9fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --primary: #0f6bd1;
+      --secondary: #1e88e5;
+      --muted: #6b7280;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); background: var(--bg); }
+    header { padding: 32px 16px; text-align: center; background: #fff; border-bottom: 1px solid #e5e7eb; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+    h1 { font-size: 2.25rem; margin: 0.5rem 0 0.25rem; }
+    p.tagline { color: var(--muted); margin: 0 0 1rem; }
+    .cta-bar { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 16px 0 0; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 1px solid transparent; }
+    .btn.primary { background: var(--primary); color: #fff; }
+    .btn.secondary { background: #f3f4f6; color: #111827; border-color: #e5e7eb; }
+    .hero { padding: 48px 0; text-align: center; background: #fff; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+    @media (min-width: 768px){
+      .grid { grid-template-columns: 1fr 1fr; align-items: center; }
+      header { text-align: left; }
+      .hero { text-align: left; padding: 60px 0; }
+    }
+    .card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+    footer { text-align: center; padding: 20px 10px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header aria-label="Site header">
+    <div class="container">
+      <h1>Sunny Family Health Care Centre</h1>
+      <p class="tagline">Compassionate, accessible care for every member of your family.</p>
+      <div class="cta-bar">
+        <a class="btn primary" href="#appointments" aria-label="Book an appointment">Book Appointment</a>
+        <a class="btn secondary" href="tel:+1-000-000-0000" aria-label="Call now">Call Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="home" role="main">
+    <section class="grid" aria-label="Overview">
+      <div class="card" style="min-height: 180px;">
+        <h2 style="margin-top:0;">Why choose Sunny Family Health Care?</h2>
+        <p>We provide comprehensive family medicine, preventive care, pediatrics, and senior care in a welcoming, accessible environment. Our team is dedicated to your family’s health journey.</p>
+      </div>
+
+      <div class="card" aria-label="Service highlights">
+        <h3 style="margin-top:0;">Core Services</h3>
+        <ul style="margin:0; padding-left:1.1rem;">
+          <li>Family medicine and preventive care</li>
+          <li>Pediatric care</li>
+          <li>Chronic disease management</li>
+          <li>Wellness & vaccination visits</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="card" style="margin-top:28px;">
+      <h2>Our Services</h2>
+      <p>Explore a curated list of our core services. More details on each service page coming soon.</p>
+      <ul>
+        <li>Primary care for adults and children</li>
+        <li>Immunizations and annual check-ups</li>
+        <li>Chronic disease management</li>
+        <li>Women's health and preventive care</li>
+      </ul>
+    </section>
+
+    <section id="appointments" class="card" style="margin-top:28px;">
+      <h2>Appointments</h2>
+      <p>Use the form below to request an appointment. We’ll respond promptly to confirm the date and time.</p>
+      <form method="POST" action="https://example.com/submit" aria-label="Appointment request form">
+        <div style="margin-bottom:10px;">
+          <label for="name" style="display:block; font-weight:600;">Full Name</label>
+          <input id="name" name="name" type="text" required style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;">
+        </div>
+        <div style="margin-bottom:10px;">
+          <label for="phone" style="display:block; font-weight:600;">Phone</label>
+          <input id="phone" name="phone" type="tel" required style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;">
+        </div>
+        <div style="margin-bottom:10px;">
+          <label for="date" style="display:block; font-weight:600;">Preferred Date</label>
+          <input id="date" name="date" type="date" required style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;">
+        </div>
+        <div style="margin-bottom:10px;">
+          <label for="notes" style="display:block; font-weight:600;">Reason for Visit</label>
+          <textarea id="notes" name="notes" rows="4" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;"></textarea>
+        </div>
+        <button type="submit" class="btn primary" style="width:100%;">Submit Request</button>
+      </form>
+      <p style="font-size:.9em; color:#6b7280; margin-top:8px;">
+        This form is not a secure patient portal. For confidential information, please contact us directly.
+      </p>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:28px;">
+      <h2>Contact & Location</h2>
+      <p>Address: 74 Vry Street Next to Police Station, Vryburg, North West</p>
+      <p>WhatsApp: 0810585678</p>
+      <p>Phone (Calls): 0785436409</p>
+      <p>Hours: 08:00 - 18:00 Monday to Friday, Saturday 08:00 - 14:00</p>
+      <!-- Optional: embed map if you have a location -->
+    </section>
+  </main>
+
+  <footer aria-label="Site footer">
+    <p>&copy; 2026 Sunny Family Health Care Centre. All rights reserved.</p>
+  </footer>
+</body>
+</html>
