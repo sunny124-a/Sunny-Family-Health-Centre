@@ -1,134 +1,1022 @@
- <!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
- <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PMWPBPW2');</script>
 <!-- End Google Tag Manager -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sunny Family Health Care Centre</title>
-  <meta name="description" content="Sunny Family Health Care Centre offers compassionate medical services for all ages. Book an appointment online or contact us by WhatsApp or phone." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg: #f6f9fb;
-      --card: #ffffff;
-      --text: #1f2937;
-      --primary: #0f6bd1;
-      --secondary: #1e88e5;
-      --muted: #6b7280;
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sunny Family Health Care Centre - Dr E.S. Abizu. Quality, compassionate healthcare for the whole family in Vryburg, North West. GP consultations, chronic care, family medicine and more.">
+<meta name="keywords" content="doctor Vryburg, GP Vryburg, family doctor North West, medical clinic Vryburg, Sunny Family Health Care, Dr Abizu">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Sunny Family Health Care Centre">
+<meta property="og:title" content="Sunny Family Health Care Centre – Dr E.S. Abizu | Vryburg">
+<meta property="og:description" content="Compassionate, accessible healthcare for every member of your family in Vryburg, North West.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sunny124-a.github.io/Sunny-Family-Health-Centre/">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Sunny Family Health Care Centre",
+    "description": "Compassionate family healthcare in Vryburg, North West",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "74 Vry Street, Next to Police Station",
+        "addressLocality": "Vryburg",
+        "addressRegion": "North West",
+        "addressCountry": "ZA"
+    },
+    "telephone": ["+27810585678", "+27785436409"],
+    "openingHours": ["Mo-Fr 08:00-18:00", "Sa 08:00-14:00"],
+    "medicalSpecialty": "General Practice"
+}
+</script>
+
+<title>Sunny Family Health Care Centre | Dr E.S. Abizu | Vryburg</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --sun: #f59e0b;
+    --sun-light: #fef3c7;
+    --sun-dark: #d97706;
+    --teal: #0f766e;
+    --teal-dark: #0d6460;
+    --teal-light: #ccfbf1;
+    --white: #ffffff;
+    --off-white: #fafaf8;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-600: #4b5563;
+    --gray-800: #1f2937;
+    --dark: #0f1923;
+    --gradient: linear-gradient(135deg, #0f766e 0%, #0891b2 100%);
+    --sun-gradient: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--gray-800);
+    line-height: 1.6;
+    background: var(--off-white);
+    overflow-x: hidden;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: var(--teal-dark);
+    color: rgba(255,255,255,0.9);
+    padding: 9px 0;
+    font-size: 0.84rem;
+}
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.top-bar a {
+    color: #99f6e4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.top-bar a:hover { color: #fff; }
+.top-bar-right { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+
+/* CONTAINER */
+.container { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+
+/* NAVBAR */
+.navbar {
+    background: var(--white);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    border-bottom: 3px solid var(--sun);
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.logo-sun {
+    width: 50px; height: 50px;
+    background: var(--sun-gradient);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 4px 12px rgba(245,158,11,0.35);
+    position: relative;
+}
+.logo-sun::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px dashed rgba(245,158,11,0.3);
+    animation: spin 12s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.logo-text h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    color: var(--teal-dark);
+    line-height: 1.1;
+    font-weight: 700;
+}
+.logo-text span {
+    font-size: 0.68rem;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    align-items: center;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray-800);
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: color 0.3s;
+    position: relative;
+}
+.nav-links a:hover { color: var(--teal); }
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    background: var(--sun);
+    transition: width 0.3s;
+}
+.nav-links a:hover::after { width: 100%; }
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 26px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.92rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+.btn-primary {
+    background: var(--gradient);
+    color: var(--white);
+    box-shadow: 0 4px 14px rgba(15,118,110,0.3);
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(15,118,110,0.4);
+}
+.btn-sun {
+    background: var(--sun-gradient);
+    color: var(--white);
+    box-shadow: 0 4px 14px rgba(245,158,11,0.3);
+}
+.btn-sun:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(245,158,11,0.4);
+}
+.btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid rgba(255,255,255,0.5);
+}
+.btn-outline:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-2px);
+}
+.btn-white {
+    background: var(--white);
+    color: var(--teal-dark);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+.btn-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.15);
+}
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--teal-dark);
+}
+
+/* HERO */
+.hero {
+    background: var(--gradient);
+    padding: 80px 0 110px;
+    position: relative;
+    overflow: hidden;
+}
+.hero::before {
+    content: '☀';
+    position: absolute;
+    top: -60px; right: -40px;
+    font-size: 280px;
+    opacity: 0.04;
+    line-height: 1;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0; right: 0;
+    height: 60px;
+    background: var(--off-white);
+    clip-path: ellipse(55% 100% at 50% 100%);
+}
+.hero .container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(245,158,11,0.2);
+    border: 1px solid rgba(245,158,11,0.4);
+    color: #fde68a;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.hero-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.2rem;
+    color: var(--white);
+    line-height: 1.12;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.hero-content h2 em {
+    font-style: italic;
+    color: #fde68a;
+}
+.hero-content p {
+    color: rgba(255,255,255,0.82);
+    font-size: 1.08rem;
+    margin-bottom: 32px;
+    max-width: 480px;
+}
+.hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.hero-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 24px;
+    padding: 36px 32px;
+    color: var(--white);
+}
+.hero-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hours-list { list-style: none; }
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    font-size: 0.93rem;
+}
+.hours-list li:last-child { border-bottom: none; }
+.hours-list .day { font-weight: 500; color: rgba(255,255,255,0.8); }
+.hours-list .time { color: #fde68a; font-weight: 700; }
+.hours-list .closed { color: #fca5a5; }
+
+/* FEATURES */
+.features { padding: 70px 0; background: var(--off-white); }
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.feature-card {
+    background: var(--white);
+    padding: 28px 20px;
+    border-radius: 18px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--gray-200);
+    position: relative;
+    overflow: hidden;
+}
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--sun-gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+.feature-card:hover::before { transform: scaleX(1); }
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 36px rgba(15,118,110,0.1);
+}
+.feature-icon {
+    width: 60px; height: 60px;
+    background: var(--teal-light);
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 14px;
+    font-size: 1.7rem;
+}
+.feature-card h3 { font-size: 1rem; color: var(--teal-dark); margin-bottom: 6px; font-weight: 700; }
+.feature-card p { color: var(--gray-600); font-size: 0.88rem; }
+
+/* SECTION HEADER */
+.section-header { text-align: center; margin-bottom: 48px; }
+.section-header .badge {
+    display: inline-block;
+    background: var(--teal-light);
+    color: var(--teal-dark);
+    padding: 5px 16px;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+.section-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem;
+    color: var(--dark);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.section-header p { color: var(--gray-600); font-size: 1rem; max-width: 580px; margin: 0 auto; }
+
+/* SERVICES */
+.services { padding: 80px 0; background: var(--white); }
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.service-card {
+    background: var(--off-white);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--gray-200);
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px rgba(15,118,110,0.1);
+    border-color: var(--teal-light);
+}
+.service-card-header {
+    background: var(--gradient);
+    padding: 22px;
+    text-align: center;
+}
+.service-card-header .icon { font-size: 2.2rem; margin-bottom: 8px; }
+.service-card-header h3 {
+    color: var(--white);
+    font-size: 1.08rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+.service-card-body { padding: 22px; }
+.service-card-body ul { list-style: none; }
+.service-card-body li {
+    padding: 7px 0;
+    color: var(--gray-600);
+    font-size: 0.91rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    border-bottom: 1px solid var(--gray-200);
+}
+.service-card-body li:last-child { border-bottom: none; }
+.service-card-body li::before {
+    content: '✓';
+    color: var(--teal);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+/* ABOUT */
+.about { padding: 80px 0; background: var(--off-white); }
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.about-content .badge {
+    display: inline-block;
+    background: var(--sun-light);
+    color: var(--sun-dark);
+    padding: 5px 16px;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+}
+.about-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    color: var(--dark);
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+.about-content p { color: var(--gray-600); margin-bottom: 14px; font-size: 1rem; }
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+}
+.stat-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--sun);
+}
+.stat-card .number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: var(--teal);
+    font-weight: 700;
+}
+.stat-card .label { color: var(--gray-600); font-size: 0.82rem; margin-top: 2px; }
+
+.about-visual {
+    background: var(--gradient);
+    border-radius: 24px;
+    padding: 50px 40px;
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-visual::before {
+    content: '☀';
+    position: absolute;
+    bottom: -40px; right: -30px;
+    font-size: 200px;
+    opacity: 0.07;
+}
+.about-visual .sun-icon {
+    font-size: 4.5rem;
+    margin-bottom: 18px;
+    filter: drop-shadow(0 4px 12px rgba(245,158,11,0.4));
+}
+.about-visual h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.about-visual p { color: rgba(255,255,255,0.78); max-width: 280px; font-size: 0.97rem; }
+.about-visual .doctor-name {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #fde68a;
+}
+
+/* MEDICAL AIDS */
+.medical-aids { padding: 70px 0; background: var(--white); text-align: center; }
+.aids-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+.aid-badge {
+    background: var(--off-white);
+    border: 2px solid var(--gray-200);
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: var(--gray-800);
+    font-size: 0.88rem;
+    transition: all 0.3s;
+}
+.aid-badge:hover {
+    border-color: var(--teal);
+    color: var(--teal);
+    background: var(--teal-light);
+}
+
+/* CTA BANNER */
+.cta-banner {
+    background: var(--sun-gradient);
+    padding: 70px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.cta-banner::before {
+    content: '☀';
+    position: absolute;
+    left: -60px; top: -60px;
+    font-size: 250px;
+    opacity: 0.08;
+}
+.cta-banner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem;
+    color: var(--white);
+    margin-bottom: 12px;
+    font-weight: 700;
+    position: relative;
+}
+.cta-banner p {
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 30px;
+    font-size: 1.08rem;
+    position: relative;
+}
+.cta-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* CONTACT */
+.contact { padding: 80px 0; background: var(--dark); color: var(--white); }
+.contact .section-header .badge { background: rgba(15,118,110,0.3); color: #99f6e4; }
+.contact .section-header h2 { color: var(--white); }
+.contact .section-header p { color: rgba(255,255,255,0.55); }
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.contact-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+.contact-card:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-4px);
+    border-color: rgba(245,158,11,0.3);
+}
+.contact-card .icon {
+    font-size: 2.4rem;
+    margin-bottom: 14px;
+    display: block;
+}
+.contact-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fde68a;
+    font-weight: 700;
+}
+.contact-card p, .contact-card a {
+    color: rgba(255,255,255,0.68);
+    font-size: 0.93rem;
+    text-decoration: none;
+    line-height: 1.8;
+}
+.contact-card a:hover { color: #99f6e4; }
+
+/* MAP */
+.map-section { padding: 0; }
+.map-section iframe { width: 100%; height: 380px; border: 0; display: block; }
+
+/* FOOTER */
+.footer {
+    background: #080f14;
+    color: rgba(255,255,255,0.4);
+    padding: 30px 0 20px;
+    text-align: center;
+}
+.footer p { font-size: 0.84rem; }
+.footer a { color: #99f6e4; text-decoration: none; }
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate { animation: fadeInUp 0.65s ease forwards; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+/* RESPONSIVE */
+@media (max-width: 968px) {
+    .hero .container { grid-template-columns: 1fr; gap: 40px; }
+    .hero-content h2 { font-size: 2.4rem; }
+    .features-grid { grid-template-columns: repeat(2, 1fr); }
+    .services-grid { grid-template-columns: 1fr; }
+    .about-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        gap: 14px;
     }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--text); background: var(--bg); }
-    header { padding: 32px 16px; text-align: center; background: #fff; border-bottom: 1px solid #e5e7eb; }
-    .container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
-    h1 { font-size: 2.25rem; margin: 0.5rem 0 0.25rem; }
-    p.tagline { color: var(--muted); margin: 0 0 1rem; }
-    .cta-bar { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 16px 0 0; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 1px solid transparent; }
-    .btn.primary { background: var(--primary); color: #fff; }
-    .btn.secondary { background: #f3f4f6; color: #111827; border-color: #e5e7eb; }
-    .hero { padding: 48px 0; text-align: center; background: #fff; }
-    .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-    @media (min-width: 768px){
-      .grid { grid-template-columns: 1fr 1fr; align-items: center; }
-      header { text-align: left; }
-      .hero { text-align: left; padding: 60px 0; }
-    }
-    .card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
-    footer { text-align: center; padding: 20px 10px; color: var(--muted); font-size: 0.9rem; }
-  </style>
+    .nav-links.active { display: flex; }
+    .mobile-menu-btn { display: block; }
+}
+@media (max-width: 600px) {
+    .top-bar .container { flex-direction: column; text-align: center; }
+    .top-bar-right { flex-direction: column; gap: 4px; }
+    .hero-content h2 { font-size: 1.9rem; }
+    .features-grid { grid-template-columns: 1fr; }
+    .hero-buttons, .cta-buttons { flex-direction: column; align-items: center; }
+    .section-header h2 { font-size: 1.9rem; }
+}
+</style>
 </head>
 <body>
- <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMWPBPW2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  <header aria-label="Site header">
+
+<!-- TOP BAR -->
+<div class="top-bar">
     <div class="container">
-      <h1>Sunny Family Health Care Centre</h1>
-      <p class="tagline">Compassionate, accessible care for every member of your family.</p>
-      <div class="cta-bar">
-        <a class="btn primary" href="#appointments" aria-label="Book an appointment">Book Appointment</a>
-        <a class="btn secondary" href="tel:+1-000-000-0000" aria-label="Call now">Call Now</a>
-      </div>
+        <span>📍 74 Vry Street, Next to Police Station, Vryburg, North West</span>
+        <div class="top-bar-right">
+            <a href="tel:+27810585678">📞 081 058 5678</a>
+            <a href="tel:+27785436409">📞 078 543 6409</a>
+            <a href="https://wa.me/27810585678">💬 WhatsApp</a>
+        </div>
     </div>
-  </header>
+</div>
 
-  <main class="container" id="home" role="main">
-    <section class="grid" aria-label="Overview">
-      <div class="card" style="min-height: 180px;">
-        <h2 style="margin-top:0;">Why choose Sunny Family Health Care?</h2>
-        <p>We provide comprehensive family medicine, preventive care, pediatrics, and senior care in a welcoming, accessible environment. Our team is dedicated to your family’s health journey.</p>
-      </div>
-
-      <div class="card" aria-label="Service highlights">
-        <h3 style="margin-top:0;">Core Services</h3>
-        <ul style="margin:0; padding-left:1.1rem;">
-          <li>Family medicine and preventive care</li>
-          <li>Pediatric care</li>
-          <li>Chronic disease management</li>
-          <li>Wellness & vaccination visits</li>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">
+            <div class="logo-sun">☀</div>
+            <div class="logo-text">
+                <h1>Sunny Family Health Care</h1>
+                <span>Dr E.S. Abizu & Practice</span>
+            </div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="tel:+27810585678" class="btn btn-primary">📞 Call Now</a></li>
         </ul>
-      </div>
-    </section>
+        <button class="mobile-menu-btn" onclick="document.getElementById('navLinks').classList.toggle('active')">☰</button>
+    </div>
+</nav>
 
-    <section id="services" class="card" style="margin-top:28px;">
-      <h2>Our Services</h2>
-      <p>Explore a curated list of our core services. More details on each service page coming soon.</p>
-      <ul>
-        <li>Primary care for adults and children</li>
-        <li>Immunizations and annual check-ups</li>
-        <li>Chronic disease management</li>
-        <li>Women's health and preventive care</li>
-      </ul>
-    </section>
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content animate">
+            <div class="hero-badge">☀ Vryburg's Trusted Family Practice</div>
+            <h2>Healthcare That <em>Shines</em> For Your Whole Family</h2>
+            <p>Sunny Family Health Care Centre delivers compassionate, accessible medical care for every member of your family — from newborns to seniors — right here in Vryburg, North West.</p>
+            <div class="hero-buttons">
+                <a href="tel:+27810585678" class="btn btn-white">📞 Call 081 058 5678</a>
+                <a href="https://wa.me/27810585678" class="btn btn-sun">💬 WhatsApp Us</a>
+                <a href="#services" class="btn btn-outline">Our Services →</a>
+            </div>
+        </div>
+        <div class="hero-card animate delay-2">
+            <div class="hero-card-title">🕐 Consulting Hours</div>
+            <ul class="hours-list">
+                <li><span class="day">Monday – Friday</span><span class="time">08:00 – 18:00</span></li>
+                <li><span class="day">Saturday</span><span class="time">08:00 – 14:00</span></li>
+                <li><span class="day">Sunday</span><span class="closed">Closed</span></li>
+                <li><span class="day">Public Holidays</span><span class="closed">Closed</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-    <section id="appointments" class="card" style="margin-top:28px;">
-      <h2>Appointments</h2>
-      <p>Use the form below to request an appointment. We’ll respond promptly to confirm the date and time.</p>
-      <form method="POST" action="https://example.com/submit" aria-label="Appointment request form">
-        <div style="margin-bottom:10px;">
-          <label for="name" style="display:block; font-weight:600;">Full Name</label>
-          <input id="name" name="name" type="text" required style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;">
+<!-- FEATURES -->
+<section class="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card animate delay-1">
+                <div class="feature-icon">🩺</div>
+                <h3>Experienced Doctor</h3>
+                <p>Dr E.S. Abizu brings years of clinical expertise and genuine care to every consultation</p>
+            </div>
+            <div class="feature-card animate delay-2">
+                <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                <h3>Full Family Care</h3>
+                <p>From babies to grandparents — we care for every generation under one roof</p>
+            </div>
+            <div class="feature-card animate delay-3">
+                <div class="feature-icon">💳</div>
+                <h3>Medical Aids Welcome</h3>
+                <p>We accept all major medical aid schemes as well as private cash patients</p>
+            </div>
+            <div class="feature-card animate delay-4">
+                <div class="feature-icon">🚶</div>
+                <h3>Walk-ins Welcome</h3>
+                <p>No appointment needed — simply walk in during our consulting hours</p>
+            </div>
         </div>
-        <div style="margin-bottom:10px;">
-          <label for="phone" style="display:block; font-weight:600;">Phone</label>
-          <input id="phone" name="phone" type="tel" required style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;">
-        </div>
-        <div style="margin-bottom:10px;">
-          <label for="date" style="display:block; font-weight:600;">Preferred Date</label>
-          <input id="date" name="date" type="date" required style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;">
-        </div>
-        <div style="margin-bottom:10px;">
-          <label for="notes" style="display:block; font-weight:600;">Reason for Visit</label>
-          <textarea id="notes" name="notes" rows="4" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:6px;"></textarea>
-        </div>
-        <button type="submit" class="btn primary" style="width:100%;">Submit Request</button>
-      </form>
-      <p style="font-size:.9em; color:#6b7280; margin-top:8px;">
-        This form is not a secure patient portal. For confidential information, please contact us directly.
-      </p>
-    </section>
+    </div>
+</section>
 
-    <section id="contact" class="card" style="margin-top:28px;">
-      <h2>Contact & Location</h2>
-      <p>Address: 74 Vry Street Next to Police Station, Vryburg, North West</p>
-      <p>WhatsApp: 0810585678</p>
-      <p>Phone (Calls): 0785436409</p>
-      <p>Hours: 08:00 - 18:00 Monday to Friday, Saturday 08:00 - 14:00</p>
-      <!-- Optional: embed map if you have a location -->
-    </section>
-  </main>
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <div class="badge">What We Offer</div>
+            <h2>Our Medical Services</h2>
+            <p>Comprehensive, affordable healthcare for you and your family in Vryburg</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-card-header">
+                    <div class="icon">🩺</div>
+                    <h3>General Consultations</h3>
+                </div>
+                <div class="service-card-body">
+                    <ul>
+                        <li>Adult & child consultations</li>
+                        <li>Flu, coughs & infections</li>
+                        <li>Skin conditions & allergies</li>
+                        <li>Medical certificates & sick notes</li>
+                        <li>Referral to specialists</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-header">
+                    <div class="icon">❤️</div>
+                    <h3>Chronic Disease Management</h3>
+                </div>
+                <div class="service-card-body">
+                    <ul>
+                        <li>Diabetes management</li>
+                        <li>Hypertension & heart care</li>
+                        <li>Asthma & respiratory care</li>
+                        <li>Cholesterol management</li>
+                        <li>HIV/AIDS care & ART</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-header">
+                    <div class="icon">👶</div>
+                    <h3>Family & Children's Health</h3>
+                </div>
+                <div class="service-card-body">
+                    <ul>
+                        <li>Paediatric consultations</li>
+                        <li>Baby immunisations</li>
+                        <li>Growth monitoring</li>
+                        <li>Women's health & family planning</li>
+                        <li>Antenatal care</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-header">
+                    <div class="icon">🔬</div>
+                    <h3>Minor Procedures</h3>
+                </div>
+                <div class="service-card-body">
+                    <ul>
+                        <li>Wound care & stitches</li>
+                        <li>Abscess drainage</li>
+                        <li>Ear syringing</li>
+                        <li>Ingrown toenail removal</li>
+                        <li>Burn treatment & dressings</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-header">
+                    <div class="icon">🧪</div>
+                    <h3>Health Screenings & Tests</h3>
+                </div>
+                <div class="service-card-body">
+                    <ul>
+                        <li>Blood glucose & cholesterol</li>
+                        <li>Blood pressure monitoring</li>
+                        <li>HIV & STI testing</li>
+                        <li>Pregnancy tests</li>
+                        <li>Urine analysis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-header">
+                    <div class="icon">📋</div>
+                    <h3>Occupational & Preventive Health</h3>
+                </div>
+                <div class="service-card-body">
+                    <ul>
+                        <li>Pre-employment medicals</li>
+                        <li>Fitness certificates</li>
+                        <li>Vaccinations & flu shots</li>
+                        <li>TB screening & DOTS</li>
+                        <li>Annual health check-ups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <footer aria-label="Site footer">
-    <p>&copy; 2026 Sunny Family Health Care Centre. All rights reserved.</p>
-  </footer>
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <div class="badge">About Our Practice</div>
+                <h2>Your Trusted Healthcare Partner in Vryburg</h2>
+                <p>Sunny Family Health Care Centre is a dedicated general practice located in the heart of Vryburg, North West. We are committed to delivering warm, professional, and affordable medical care to individuals and families across our community.</p>
+                <p>Led by Dr E.S. Abizu, our practice offers a wide range of services — from routine check-ups to chronic disease management — ensuring every patient receives the attention and care they deserve.</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="number">All</div>
+                        <div class="label">Medical Aids Accepted</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">6+</div>
+                        <div class="label">Service Categories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">6</div>
+                        <div class="label">Days Open Per Week</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">10h</div>
+                        <div class="label">Daily Consulting Hours</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="sun-icon">☀️</div>
+                <h3>Sunny Family Health Care Centre</h3>
+                <p>Where compassion meets expertise — quality healthcare for every family in Vryburg</p>
+                <div class="doctor-name">Dr E.S. Abizu</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MEDICAL AIDS -->
+<section class="medical-aids">
+    <div class="container">
+        <div class="section-header">
+            <div class="badge">Insurance</div>
+            <h2>Medical Aids We Accept</h2>
+            <p>We accept all major medical aid schemes — and cash patients are always welcome</p>
+        </div>
+        <div class="aids-grid">
+            <span class="aid-badge">Discovery Health</span>
+            <span class="aid-badge">Bonitas</span>
+            <span class="aid-badge">Momentum Health</span>
+            <span class="aid-badge">GEMS</span>
+            <span class="aid-badge">Medihelp</span>
+            <span class="aid-badge">Bestmed</span>
+            <span class="aid-badge">Sizwe Hosmed</span>
+            <span class="aid-badge">Polmed</span>
+            <span class="aid-badge">Profmed</span>
+            <span class="aid-badge">CompCare</span>
+            <span class="aid-badge">Keyhealth</span>
+            <span class="aid-badge">Private / Cash</span>
+        </div>
+    </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+    <div class="container">
+        <h2>Ready to See a Doctor?</h2>
+        <p>Walk in during consulting hours or contact us to book. We're here for your family.</p>
+        <div class="cta-buttons">
+            <a href="tel:+27810585678" class="btn btn-white">📞 081 058 5678</a>
+            <a href="tel:+27785436409" class="btn btn-white">📞 078 543 6409</a>
+            <a href="https://wa.me/27810585678" class="btn btn-outline">💬 WhatsApp Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <div class="badge">Get In Touch</div>
+            <h2>Contact Us</h2>
+            <p>Reach out by phone, WhatsApp, or simply visit us at our rooms</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <span class="icon">📍</span>
+                <h3>Our Location</h3>
+                <p>74 Vry Street<br>Next to Police Station<br>Vryburg, North West</p>
+            </div>
+            <div class="contact-card">
+                <span class="icon">📞</span>
+                <h3>Call Us</h3>
+                <p>
+                    <a href="tel:+27810585678">081 058 5678</a><br>
+                    <a href="tel:+27785436409">078 543 6409</a><br>
+                    <a href="https://wa.me/27810585678">💬 WhatsApp: 081 058 5678</a>
+                </p>
+            </div>
+            <div class="contact-card">
+                <span class="icon">🕐</span>
+                <h3>Consulting Hours</h3>
+                <p>
+                    Mon – Fri: 08:00 – 18:00<br>
+                    Saturday: 08:00 – 14:00<br>
+                    Sunday & Public Holidays: Closed
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571!2d24.7308!3d-26.9628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU3JzQ2LjEiUyAyNMKwNDMnNTAuOSJF!5e0!3m2!1sen!2sza!4v1"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Sunny Family Health Care Centre — Dr E.S. Abizu. All rights reserved.</p>
+        <p style="margin-top:8px;">74 Vry Street, Vryburg, North West | <a href="tel:+27810585678">081 058 5678</a></p>
+    </div>
+</footer>
+
 </body>
 </html>
